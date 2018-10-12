@@ -1,11 +1,37 @@
+* {
+    background-color: aqua;
+    background-image: url("http://www.retornoanime.com/wp-content/uploads/2017/12/jxQfx.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body {
+    background: non
+}
 .crystals {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: NONE;
 }
 
 .crystal {
-    border: 1px solid green;
+    border: 1px solid black;
     height: 200px;
-    width: 200px;;
+    width: 200px;
+}
+
+p {
+    background: none;
+}
+
+.jumbotron {
+    background: white;
+    margin: 5%;
+    color: black ;
+}
+.title {
+    background: green;
+}
+.directions {
+    background: none;
 }
