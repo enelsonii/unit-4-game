@@ -12,30 +12,37 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="title">Crash Crystak Counter</h1>
+        <h1 class="title">How good are you with math?</h1>
         <hr class="my-4">
         <h2 class="directions">Game Instructions:</h2>
-        <p> There will be four crystals displayed as buttons on the page. There will be a random number at the start of the
+        <p> There will be four squares displayed as buttons on the page. There will be a random number at the start of the
             game. The player will click on a crystal, it will add a specific amount of points to the player's total score.
             Each crystal holds a different number, but will only display amount when clock. The player would have to use
-            their math skills to determine the value of each crystal. When they do click one, update the player's score counter.
+            their math skills to determine the value of each square. When they do click one, update the player's score counter.
             The player wins if their total score matches the random number from the beginning of the game. The player loses
             if their score goes above the random number. The game restarts whenever the player wins or loses.</p>
     </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                <h3 id="targetNumber"></h3>
+            </h1>
+            <div class="crystals">
 
+            </div>
+            <div class="container2">
+                    <h3 id="originalNumber"> </h3>
 
-    <p id="targetNumber"></p>
-
-    <div class="crystals">
-        <img src="assets/images/crystal2.jpeg" alt="Crystal 1">
-        <img src="assets/images/crstyal3.png" alt="Crystal 2">
-        <img src="assets/images/crystal4.png" alt="Crystal 3">
-
+                    <h3 id="win">Win: </h3>
+                    <h3 id="lost">Loss: </h3>
+            </div>
+            
+        </div>
     </div>
-    <P id="originalNumber"> </P>
 
-    <p id="win">Win: </p>
-    <p id="lost">Loss: </p>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>

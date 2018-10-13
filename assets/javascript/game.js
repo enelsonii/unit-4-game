@@ -9,11 +9,11 @@ var resetAndStart = function () {
     // emptry crystal value to get new number each round and prevents doubles
     $(".crystals").empty();
     var images = [
-        "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/6/6a/Free_Crystal.png/revision/latest?cb=20151121235051",
         "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/1/19/Crystal_rare.png/revision/latest?cb=20151122000058",
-        "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/1/1c/2-Star_Crystal.png/revision/latest?cb=20150825213642",
-        "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/8/8d/Daily_Crystal.png/revision/latest?cb=20150825213624"
-    ]
+        "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/6/6a/Free_Crystal.png/revision/latest?cb=20151121235051",
+        "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/8/8d/Daily_Crystal.png/revision/latest?cb=20150825213624",
+        "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/c3/Crystal_iso8.png/revision/latest?cb=20151121235324",
+    ];
     // random number from  19- 120
     targetNumber = Math.floor(Math.random() * 101) + 19;
     // console.log(targetNumber);
@@ -37,8 +37,10 @@ var resetAndStart = function () {
             "random-number": random
         });
         crystal.css({
-            "background-images": "url" + (images[i]) + "",
-            "background":"pink",
+            "background-images": "url('" + images[i] + ")'",
+            "background":"#d0aebc",
+            "backgournd-size":"cover"
+            
         });
         $(".crystals").append(crystal);
     }
@@ -88,6 +90,9 @@ $(document).on("click", ".crystal", function () {
 
         resetAndStart();
     }
+    targetNumber.css({
+        "backgroud":"#f6f4f",
+    });
 
     // console.log(originalNumber);
 });

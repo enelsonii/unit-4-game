@@ -1,11 +1,11 @@
 * {
-    background-color: aqua;
-    background-image: url("http://www.retornoanime.com/wp-content/uploads/2017/12/jxQfx.jpg");
+    background-color: #213451;
+    background-image:"https://vignette.wikia.nocookie.net/animal-jams-neutral-groups/images/9/9a/Jungle-HD-Wallpapers.jpg/revision/latest?cb=20161207045714";
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 body {
-    background: non
+    background: none;
 }
 .crystals {
     display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 .crystal {
-    border: 1px solid black;
+    border: 1px solid #f6f4f5;
     height: 200px;
     width: 200px;
 }
@@ -25,13 +25,35 @@ p {
 }
 
 .jumbotron {
-    background: white;
+    background: #f6f4f5;
     margin: 5%;
     color: black ;
 }
 .title {
-    background: green;
+  
 }
 .directions {
     background: none;
+}
+#lost {
+    backface-visibility: none;
+}
+img{
+    width: 50px;
+}
+.container {
+    background: #f6f4f5;
+}
+#targetNumber {
+    background: none;
+}
+h1 {
+    background: none;
+}
+h3 {
+    background: none;
+}
+.container2 {
+    background: none;
+    padding: 20px;
 }
